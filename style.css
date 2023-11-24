@@ -7,6 +7,7 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+
 h1 {
     text-align: center;
     font-size: 35px;
@@ -14,7 +15,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.3vw;
 }
 
 .lightbox {
@@ -30,19 +31,20 @@ h2 {
 
 .box {
     position: relative;
-    padding: 45px;
-    width: 60%;
+    padding: 30px;
+    width: 55%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFCB02;
-    color: #fff;
+    color: #000;
+    margin-top: 1em;
 }
 
 #closeID {
     position: absolute;
     left: 97%;
-    top: 5%;
+    top: 3%;
     font-size: 1.5vw;
     color: #000;
     font-weight: bold;
@@ -51,3 +53,129 @@ h2 {
     text-decoration: none;
 }
 
+.subHead{
+    font-weight: 300;
+    font-size: 1.3vw;
+    text-indent: 4px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.user-fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #ccc;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 75%;
+    height: 50px;
+}
+
+input[type="submit"]:hover{
+    color: #fff;
+    background-color: #24b400;
+    border-color: rgb(56, 56, 56);
+}
+
+label[for="news-letter"]{
+    cursor: pointer;
+}
+
+.privacy-doc{
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 75%;
+    margin-top: 0.8em;
+    font-size: 0.8vw;;
+}
+
+
+
+.col-8 {
+    width: 60%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+
+.big-offer{
+    width: 100%;
+}
+
+
+@media(max-width: 500px){
+    .box{
+        padding: 30px;
+    width: 90%;
+    }
+
+    #closeID{
+        font-size: 20px;
+        left: 94%;
+    }
+
+    .col-12{
+        width: 100%;
+    }
+    header h2, .subHead{
+        font-size: 16px;
+    }
+    .privacy-doc{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    label[for="news-letter"] {
+        font-size: 14px;
+    }
+    .user-fields{
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
